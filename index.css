@@ -58,22 +58,41 @@ nav > div:hover {
     align-items: flex-start;
 }
 
+/* FORMULARIO */
 #div_form {
     border: solid 1px;
     width: 100%;
+    padding: 10px;
+    border-style: hidden;
 }
 
-#div_direc, #div_map {
+input {
+    width: 90%;
+    padding: 10px;
+    border: 0px 0px 0px 0px green;
+}
+
+/* DIRECCION */
+#div_direc {
     border: solid 1px;
     background-color: whitesmoke;
-    width: 49%;
+    width: 70%;
     height: 500px;
     padding: 10px;
 }
 
 #div_direc > img {
-    width: 100%;
-    height: 100%;
+    width: 600px;
+    height: 500px;
+}
+
+/* MAPA */
+#div_map {
+    border: solid 1px;
+    background-color: whitesmoke;
+    width: 25%;
+    height: 500px;
+    padding: 10px;
 }
 
 #div_map > iframe {

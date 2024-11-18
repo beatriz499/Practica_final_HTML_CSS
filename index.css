@@ -2,7 +2,7 @@
 body{
     display: flex;
     flex-direction: column;
-    background-color:#eff2f3;
+    background-color:white;
     color: black;
     font: 14px sans-serif;
 }
@@ -48,6 +48,37 @@ nav > div:hover {
     width: 100%;
 }
 
+/* Estilos objetos del contenido del cuerpo en sobre nosotros */
+h3 {
+    font-size: 28px;
+    background-color: #c9d8e2;
+    padding: 10px 10px 10px 10px;
+    margin: 0px;
+}
+#nosotros_content > p, h4 {
+    margin-left: 10px;
+}
+q {
+    display: block;
+    text-align: center;
+    color: #00659d;
+    font-weight: bold;
+    font-size: 36px;
+    font-style: italic;
+    padding: 20px;
+}
+
+ol > li {
+    font-weight: bold;
+}
+
+/* Estilos objetos del contenido del cuerpo en nuestros productos */
+th, td {
+    border: solid 1px;
+    text-align: center;
+    padding: 10px;
+}
+
 /* Estilos objetos del contenido del cuerpo en contacto */
 
 #contacto_content{
@@ -60,38 +91,44 @@ nav > div:hover {
 
 /* FORMULARIO */
 #div_form {
-    border: solid 1px;
+    background-color: #95b9cc;
     width: 100%;
     padding: 10px;
     border-style: hidden;
 }
 
-input {
-    width: 90%;
-    padding: 10px;
-    border: 0px 0px 0px 0px green;
+input, textarea {
+    font-family: sans-serif;
+    border: 0px;
+    border-radius: 3px;
+    padding: 5px;
+    color: gray;
+    width: 98%;
+    margin: 5px;
+}
+
+#div_form > legend {
+    font-weight: bold;
 }
 
 /* DIRECCION */
 #div_direc {
-    border: solid 1px;
     background-color: whitesmoke;
     width: 70%;
-    height: 500px;
+    height: 450px;
     padding: 10px;
 }
 
 #div_direc > img {
-    width: 600px;
-    height: 500px;
+    width: 100%;
+    max-height: 100%;
 }
 
 /* MAPA */
 #div_map {
-    border: solid 1px;
     background-color: whitesmoke;
     width: 25%;
-    height: 500px;
+    height: 450px;
     padding: 10px;
 }
 

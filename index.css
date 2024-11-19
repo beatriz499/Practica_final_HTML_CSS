@@ -85,8 +85,25 @@ q {
     padding: 20px;
 }
 
-ol > li {
+ol > div {
+    display: flex;
+    align-items: center;
+    border: solid 1px;
+}
+
+ol > div > li {
     font-weight: bold;
+    border: solid 1px;
+}
+
+ol > div > img {
+    padding-right: 30px;
+    border: solid 1px;
+}
+
+ol > dl {
+    margin-left: 65px;
+    border: solid 1px;
 }
 
 /* Estilos objetos de main en nuestros productos */

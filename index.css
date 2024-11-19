@@ -17,7 +17,7 @@ header {
     width: 100%;
 }
 
-header > h2, p {
+header > h2, header > p {
     margin: 10px;
 }
 
@@ -43,12 +43,29 @@ nav > div:hover {
     background-color: #003152;
 }
 
-/* Estilos objetos del contenido del cuerpo en inicio */
+/* Estilos objetos de main en inicio */
 #inicio_content > img {
     width: 100%;
 }
 
-/* Estilos objetos del contenido del cuerpo en sobre nosotros */
+#inicio_content > p {
+    position: absolute;
+    top: 255px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 36px;
+    text-align: center;
+    text-shadow: -3px 3px 5px black;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#inicio_content > p > b {
+    font-size: 45px;
+}
+
+/* Estilos objetos de main en sobre nosotros */
 h3 {
     font-size: 28px;
     background-color: #c9d8e2;
@@ -72,14 +89,14 @@ ol > li {
     font-weight: bold;
 }
 
-/* Estilos objetos del contenido del cuerpo en nuestros productos */
+/* Estilos objetos de main en nuestros productos */
 th, td {
     border: solid 1px;
     text-align: center;
     padding: 10px;
 }
 
-/* Estilos objetos del contenido del cuerpo en contacto */
+/* Estilos objetos de main en contacto */
 
 #contacto_content{
     display: flex;

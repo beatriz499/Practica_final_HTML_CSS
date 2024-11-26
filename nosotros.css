@@ -1,0 +1,109 @@
+/* Estilo body generales */
+body{
+    display: flex;
+    flex-direction: column;
+    background-color:white;
+    color: black;
+    font: 10px sans-serif;
+    width: 100%;
+    margin: 0px;
+}
+
+html {
+    margin: 0px;
+}
+
+/* Estilos objetos del HEADER */
+header {
+    display: flex;
+    align-items: center;
+    background-color:#1e1d1d;
+    color: whitesmoke;
+    font-size: 4em;
+}
+
+header > h2, header > p {
+    padding-right: 0.5em;
+}
+
+nav {
+    display: flex;
+    background-color:#00659d;
+    font-size: 1.5em;
+}
+
+/* Estilos objetos de la barra de NAVEGACIÓN */
+nav > div {
+    padding: 1em;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+nav > div:hover {
+    background-color: #003152;
+}
+
+/* Estilos objetos de main en sobre NOSOTROS */
+h3 {
+    font-size: 1em;
+    background-color: #c9d8e2;
+    padding: 10px 10px 10px 10px;
+    margin: 0px;
+}
+#nosotros_content > p, h4 {
+    margin-left: 10px;
+}
+q {
+    display: block;
+    text-align: center;
+    color: #00659d;
+    font-weight: bold;
+    font-size: 36px;
+    font-style: italic;
+    padding: 20px;
+}
+
+ol > div {
+    display: flex;
+    align-items: center;
+    border: solid 1px;
+}
+
+ol > div > li {
+    font-weight: bold;
+    border: solid 1px;
+}
+
+ol > div > img {
+    padding-right: 30px;
+    border: solid 1px;
+}
+
+ol > dl {
+    margin-left: 65px;
+    border: solid 1px;
+}
+
+
+/* Estilos objetos del FOOTER */
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#525252;
+    color: whitesmoke;
+    padding: 10px;
+    font-size: 1.2em;
+    position: relative;
+    bottom: 0;
+}
+
+div.rrss_iconos > img {
+    filter: invert(100%);
+}

@@ -1,227 +1,70 @@
-/* Estilo body generales */
-body{
-    display: flex;
-    flex-direction: column;
-    background-color:white;
-    color: black;
-    font: 10px sans-serif;
-    width: 100%;
-    margin: 0px;
-}
-
-html {
-    margin: 0px;
-}
-
-/* Estilos objetos del HEADER */
-header {
-    display: flex;
-    align-items: center;
-    background-color:#1e1d1d;
-    color: whitesmoke;
-    font-size: 4em;
-}
-
-header > h2, header > p {
-    padding-right: 0.5em;
-    margin: 10px 10px 10px 10px;
-}
-
-nav {
-    display: flex;
-    background-color:#00659d;
-    font-size: 1.5em;
-}
-
-/* Estilos objetos de la barra de NAVEGACIÓN */
-nav > div {
-    padding: 1em;
-}
-
-a {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: whitesmoke;
-    font-weight: bold;
-}
-
-nav > div:hover {
-    background-color: #003152;
-}
-
 /* Estilos objetos de main en INICIO */
 
-#inicio_content > div {
-    display: flex;
-}
-#inicio_content > img {
+/* Contenedor de la imagen */
+.image-container {
+    position: relative; /* Contenedor relativo para posicionar elementos dentro */
+    display: inline-block; /* Ajusta el tamaño al contenido de la imagen */
     width: 100%;
 }
 
-#inicio_content > p {
-    /* position: absolute; */
-    top: 32%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    text-align: center;
-    text-shadow: -3px 3px 5px black;
-    font-size: 3em;
+/* Imagen dentro del contenedor */
+.image-container img {
+    display: block; /* Evita el espacio en blanco debajo de la imagen */
+    width: 100%; /* Ajusta según tu diseño */
+    height: auto; /* Mantén la proporción de la imagen */
 }
 
-#inicio_content > p > b {
-    font-size: 2em;
+/* Capa superpuesta en la imagen */
+.overlay {
+    position: absolute; /* Superpuesto al contenedor */
+    top: 0;
+    left: 0;
+    width: 100%; /* Ocupa toda la imagen */
+    height: 100%; /* Ocupa toda la imagen */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente gris oscuro */
 }
 
-/* Estilos objetos de main en sobre NOSOTROS */
-h3 {
-    font-size: 1em;
-    background-color: #c9d8e2;
-    padding: 10px 10px 10px 10px;
-    margin: 0px;
-}
-#nosotros_content > p, h4 {
-    margin-left: 10px;
-}
-q {
-    display: block;
-    text-align: center;
-    color: #00659d;
-    font-weight: bold;
-    font-size: 36px;
-    font-style: italic;
-    padding: 20px;
+/* Texto que se superpone en la imagen */
+.text-overlay {
+    position: absolute; /* Posiciona el texto dentro del contenedor relativo */
+    top: 45%; /* Centrado vertical */
+    left: 50%; /* Centrado horizontal */
+    transform: translate(-50%, -50%); /* Ajusta el centro exacto */
+    color: white; /* Color del texto */
+    font-size: 4em; /* Tamaño del texto */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Agrega un efecto de sombra para mayor legibilidad */
+    text-align: center; /* Centra el texto */
 }
 
-ol > div {
-    display: flex;
-    align-items: center;
-    border: solid 1px;
-}
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
 
-ol > div > li {
-    font-weight: bold;
-    border: solid 1px;
-}
-
-ol > div > img {
-    padding-right: 30px;
-    border: solid 1px;
-}
-
-ol > dl {
-    margin-left: 65px;
-    border: solid 1px;
-}
-
-/* Estilos objetos de main en nuestros PRODUCTOS */
-th, td {
-    border: solid 1px;
-    text-align: center;
-    padding: 10px;
-}
-
-/* Estilos objetos de main en CONTACTO */
-
-#contacto_content{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-
-/* FORMULARIO */
-#div_form {
-    background-color: #95b9cc;
-    width: 100%;
-    padding: 10px;
-    border-style: hidden;
-}
-
-input, textarea {
-    font-family: sans-serif;
-    border: 0px;
-    border-radius: 3px;
-    padding: 5px;
-    color: gray;
-    width: 98%;
-    margin: 5px;
-}
-
-#div_form > legend {
-    font-weight: bold;
-}
-
-/* DIRECCION */
-#div_direc {
-    background-color: whitesmoke;
-    width: 70%;
-    height: 450px;
-    padding: 10px;
-}
-
-#div_direc > img {
-    width: 100%;
-    max-height: 100%;
-}
-
-/* MAPA */
-#div_map {
-    background-color: whitesmoke;
-    width: 25%;
-    height: 450px;
-    padding: 10px;
-}
-
-#div_map > iframe {
-    width: 100%;
-    height: 100%;
-}
-
-/* Estilos objetos del FOOTER */
-footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background-color:#525252;
-    color: whitesmoke;
-    padding: 10px;
-    font-size: 1.2em;
-    position: relative;
-    bottom: 0;
-}
-
-div.rrss_iconos > img {
-    filter: invert(100%);
-}
-
-/*Adaptación para */
-@media only screen and (max-width:742px) {
-    /*Añadir cambios para pantallas en general. */
-    header {
-        font-size: 3em;
-    }
-    
-    nav {
-        background-color: red;
-        font-size: 1em;
+    /* Reducir el tamaño del texto para pantallas pequeñas */
+    .text-overlay {
+        font-size: 2em; /* Tamaño de texto más pequeño en móviles */
     }
 
-    #inicio_content > p {
-        top: 26%;
-        width: 100%;
-        padding-top: 2em;
-        padding-bottom: 2em;
-        font-size: 2em;
-    }
-    
+    /* Ajustar el texto en dispositivos pequeños */
     #inicio_content > p > b {
-        font-size: 1.5em;
+        font-size: 1.5em; /* Reducir el tamaño del texto en párrafos */
+    }
+
+    /* Asegurarse que la imagen ocupe el 100% del contenedor */
+    .image-container img {
+        width: 100%; /* Mantener la imagen completamente ajustada al contenedor */
+        height: auto;
     }
 }
 
-@media only screen and (min-device-width:320px) {
-    /*Añadir cambios para dispositivos específicos, como por ejemplo movil. */
+/* Ajustes para pantallas extra pequeñas (móviles en modo vertical) */
+@media (max-width: 480px) {
+
+    /* Reducción adicional del tamaño del texto */
+    .text-overlay {
+        font-size: 1.2em; /* Tamaño de texto más pequeño en dispositivos móviles muy pequeños */
+    }
+
+    #inicio_content > p > b {
+        font-size: 1.2em; /* Asegurar que el texto también sea legible */
+    }
 }

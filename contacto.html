@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Dunder Miffling</title>
         <link rel="icon" type="image/x-icon" href="recursos/icon-orig.png">
+        <link href="header-nav-footer.css" rel="stylesheet">
         <link href="contacto.css" rel="stylesheet">
     </head>
 
@@ -12,7 +13,7 @@
         <!-- Cabecera de la web -->
         <header>
             <img src="recursos/the-office-logo2.png" width="100px" height="100px">
-            <h2>Dunder Miffling</h2>
+            <h1>Dunder Miffling</h1>
             <p>Empresa de papel</p>   
         </header>
         
@@ -22,46 +23,89 @@
             <div><a href="nosotros.html">Sobre nosotros</a></div>
             <div><a href="productos.html">Nuestros productos</a></div>
             <div><a href="contacto.html">Contacto</a></div>
-            <div><a href="unete.html">Únete al equipo</a></div>
+            <div><a href="game.html">Minijuego</a></div>
         </nav>
 
         <!-- Contenido -->
         <main id="contacto_content">
+            <div id="container_dir_map"> 
+                    <!-- Dirección -->
+                <div id="div_direc">
+                    <h3>Encuentranos en nuestras oficinas de Scranton</h3>
+                    <address>
+                        1725 Slough Avenue, Scranton, PA 18505, EE. UU <br>
+                        Teléfono: (570) 555-0159
+                    </address>
+                    <img src="recursos/foto-oficina.png">
+                </div>
+
+                <!-- Mapa -->
+                <div id="div_map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6598.946783655787!2d-118.43648399547041!3d34.21092911418144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c296d9034017e5%3A0x35bda522cf252b11!2s13927%20Saticoy%20St%2C%20Panorama%20City%2C%20CA%2091402%2C%20EE.%20UU.!5e0!3m2!1ses!2ses!4v1731614839393!5m2!1ses!2ses" 
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
             <!-- Formulario de contacto -->
-            <div id="div_form">
-                <h3>Ponte en contacto con nosotros</h3>
-                <form>
-                    <input type="text" id="nombre_id" name="nombre_var" placeholder="Nombre"> </input>
-                    <br>
-                    <input type="text" id="apellidos_id" name="apellidos_var" placeholder="Apellidos"> </input>
-                    <br>
-                    <input type="text" id="correo_id" name="correo_var" placeholder="Correo"> </input>
-                    <br>
-                    <textarea type="text" id="mensaje_id" name="mensaje_var">Introduce aquí tu mensaje... </textarea>
-                </form>
+            <div id="container_form">
+                <div id="div_form">
+                    <h3>Ponte en contacto con nosotros</h3>
+                    <form>
+                        <!-- Campo de texto -->
+                        <label for="nombre_id">Nombre y Apellidos</label>
+                        <input type="text" id="nombre_id" name="nombre_var" placeholder="Tu nombre">
+                        
+                        <!-- Campo de texto adicional -->
+                        <label for="empresa_id">Empresa</label>
+                        <input type="text" id="empresa_id" name="empresa_var" placeholder="Nombre de la empresa">
+
+                        <!-- Campo de correo -->
+                        <label for="correo_id">Correo Electrónico</label>
+                        <input type="email" id="correo_id" name="correo_var" placeholder="Correo electrónico">
+
+                        <!-- Campo numérico -->
+                        <label for="presupuesto_id">Presupuesto estimado</label>
+                        <input type="number" id="presupuesto_id" name="presupuesto_var" placeholder="Presupuesto estimado">
+
+                        <!-- Radio Buttons -->
+                        <fieldset>
+                            <legend>¿Eres cliente actual?</legend>
+                            <label>Sí</label>
+                            <input type="radio" name="cliente" value="si">
+                            <label>No</label>
+                            <input type="radio" name="cliente" value="no">
+                        </fieldset>
+
+                        <!-- Checkboxes -->
+                        <fieldset>
+                            <legend>Servicios de interés</legend>
+                            <label>Papel</label>
+                            <input type="checkbox" name="servicio" value="papel">
+                            <label>Productos de oficina</label>
+                            <input type="checkbox" name="servicio" value="productos">
+                            <label>Entregas rápidas</label>
+                            <input type="checkbox" name="servicio" value="entrega">
+                        </fieldset>
+
+                        <!-- Textarea -->
+                        <label for="mensaje_id">Mensaje</label>
+                        <textarea id="mensaje_id" name="mensaje_var" placeholder="Introduce aquí tu mensaje..."></textarea>
+
+                        <!-- Botón de envío -->
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
             </div>
 
-            <!-- Dirección -->
-            <div id="div_direc">
-                <h3>Encuentranos en nuestras oficinas de Scranton</h3>
-                <address>1725 Slough Avenue, Scranton, PA 18505, EE. UU (570) 555-0159</address><br>
-                <img src="recursos/foto-oficina.png">
-            </div>
-
-            <!-- Mapa -->
-            <div id="div_map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6598.946783655787!2d-118.43648399547041!3d34.21092911418144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c296d9034017e5%3A0x35bda522cf252b11!2s13927%20Saticoy%20St%2C%20Panorama%20City%2C%20CA%2091402%2C%20EE.%20UU.!5e0!3m2!1ses!2ses!4v1731614839393!5m2!1ses!2ses" 
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
         </main>
 
         <!-- Pie de la web -->
         <footer>
             <p>Dunder Miffling ©</p>
             <div class="rrss_iconos">
-                <img src="/recursos/signo-de-twitter.png" width="25px">
-                <img src="/recursos/instagram.png" width="25px">
-                <img src="/recursos/logotipo-de-linkedin.png" width="25px">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -3.268 64 68.414" width="25px" height="25px"><path fill="#ffffff" d="M13.873 3.805C21.21 9.332 29.103 20.537 32 26.55v15.882c0-.338-.13.044-.41.867-1.512 4.456-7.418 21.847-20.923 7.944-7.111-7.32-3.819-14.64 9.125-16.85-7.405 1.264-15.73-.825-18.014-9.015C1.12 23.022 0 8.51 0 6.55 0-3.268 8.579-.182 13.873 3.805zm36.254 0C42.79 9.332 34.897 20.537 32 26.55v15.882c0-.338.13.044.41.867 1.512 4.456 7.418 21.847 20.923 7.944 7.111-7.32 3.819-14.64-9.125-16.85 7.405 1.264 15.73-.825 18.014-9.015C62.88 23.022 64 8.51 64 6.55c0-9.818-8.578-6.732-13.873-2.745z"/></svg>
+                <svg fill="#ffffff" height="25px" width="25px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-143 145 512 512" xml:space="preserve"><path d="M329,145h-432c-22.1,0-40,17.9-40,40v432c0,22.1,17.9,40,40,40h432c22.1,0,40-17.9,40-40V185C369,162.9,351.1,145,329,145zM41.4,508.1H-8.5V348.4h49.9V508.1z M15.1,328.4h-0.4c-18.1,0-29.8-12.2-29.8-27.7c0-15.8,12.1-27.7,30.5-27.7c18.4,0,29.7,11.9,30.1,27.7C45.6,316.1,33.9,328.4,15.1,328.4z M241,508.1h-56.6v-82.6c0-21.6-8.8-36.4-28.3-36.4c-14.9,0-23.2,10-27,19.6c-1.4,3.4-1.2,8.2-1.2,13.1v86.3H71.8c0,0,0.7-146.4,0-159.7h56.1v25.1c3.3-11,21.2-26.6,49.8-26.6c35.5,0,63.3,23,63.3,72.4V508.1z"/></svg>
+                <svg width="25px" height="25px" viewBox="0 0 24 24" id="meteor-icon-kit__solid-instagram" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M11.9962 0.0078125C8.73824 0.0078125 8.32971 0.021622 7.05019 0.080003C5.77333 0.138241 4.90129 0.341051 4.13824 0.637622C3.34938 0.944146 2.68038 1.35434 2.01343 2.02124C1.34652 2.68819 0.936333 3.35719 0.629809 4.14605C0.333238 4.9091 0.130429 5.78115 0.0721905 7.058C0.0138095 8.33753 0 8.74605 0 12.0041C0 15.262 0.0138095 15.6705 0.0721905 16.9501C0.130429 18.2269 0.333238 19.099 0.629809 19.862C0.936333 20.6509 1.34652 21.3199 2.01343 21.9868C2.68038 22.6537 3.34938 23.0639 4.13824 23.3705C4.90129 23.667 5.77333 23.8698 7.05019 23.9281C8.32971 23.9864 8.73824 24.0002 11.9962 24.0002C15.2542 24.0002 15.6627 23.9864 16.9422 23.9281C18.2191 23.8698 19.0911 23.667 19.8542 23.3705C20.643 23.0639 21.312 22.6537 21.979 21.9868C22.6459 21.3199 23.0561 20.6509 23.3627 19.862C23.6592 19.099 23.862 18.2269 23.9202 16.9501C23.9786 15.6705 23.9924 15.262 23.9924 12.0041C23.9924 8.74605 23.9786 8.33753 23.9202 7.058C23.862 5.78115 23.6592 4.9091 23.3627 4.14605C23.0561 3.35719 22.6459 2.68819 21.979 2.02124C21.312 1.35434 20.643 0.944146 19.8542 0.637622C19.0911 0.341051 18.2191 0.138241 16.9422 0.080003C15.6627 0.021622 15.2542 0.0078125 11.9962 0.0078125ZM7.99748 12.0041C7.99748 14.2125 9.78776 16.0028 11.9962 16.0028C14.2047 16.0028 15.995 14.2125 15.995 12.0041C15.995 9.79557 14.2047 8.00529 11.9962 8.00529C9.78776 8.00529 7.99748 9.79557 7.99748 12.0041ZM5.836 12.0041C5.836 8.60181 8.594 5.84381 11.9962 5.84381C15.3984 5.84381 18.1564 8.60181 18.1564 12.0041C18.1564 15.4062 15.3984 18.1642 11.9962 18.1642C8.594 18.1642 5.836 15.4062 5.836 12.0041ZM18.3998 7.03996C19.1949 7.03996 19.8394 6.39548 19.8394 5.60043C19.8394 4.80538 19.1949 4.16086 18.3998 4.16086C17.6048 4.16086 16.9603 4.80538 16.9603 5.60043C16.9603 6.39548 17.6048 7.03996 18.3998 7.03996Z" fill="#ffffff"/></svg>
             </div>
             <address>
                 1725 Slough Avenue,<br>

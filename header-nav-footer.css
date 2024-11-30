@@ -1,0 +1,137 @@
+/* Estilo body generales */
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: #e7eef3;
+    color: black;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    margin: 0px;
+}
+
+html {
+    margin: 0px;
+}
+
+/* Estilos para el HEADER */
+header {
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333333;
+    color: whitesmoke;
+    padding: 10px;
+}
+
+header img {
+    max-width: 80px;
+    height: auto;
+    margin-right: 10px;
+}
+
+header h1 {
+    font-size: 5em;
+    margin: 0;
+}
+
+header p {
+    font-size: 2em;
+    margin: 0;
+}
+
+/* Barra de navegación */
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #1E76BA;
+}
+
+nav > div {
+    padding: 10px 15px; /* Espaciado interno de cada enlace */
+}
+
+nav > div:hover {
+    background-color: #5A8CCF;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+
+/* Estilos objetos del FOOTER */
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#333333;
+    color: whitesmoke;
+    padding: 10px;
+    font-size: 1.2em;
+    position: relative;
+    bottom: 0;
+}
+
+div.rrss_iconos > svg {
+    padding: 5px;
+}
+
+/* Media Queries para adaptabilidad */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Coloca los elementos en una sola columna */
+        text-align: center;
+    }
+
+    header img {
+        max-width: 60px; /* Reduce el tamaño de la imagen en pantallas pequeñas */
+    }
+
+    header h1 {
+        font-size: 1.5em; /* Reduce el tamaño del título */
+    }
+
+    header p {
+        font-size: 0.9em; /* Reduce el tamaño del subtítulo */
+    }
+
+    nav {
+        flex-direction: column; /* Coloca los enlaces uno debajo del otro */
+        align-items: center;
+    }
+
+    nav > div {
+        width: 100%; /* Los enlaces ocuparán el ancho completo */
+        text-align: center;
+    }
+
+    a {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.2em; /* Aún más pequeño en pantallas muy estrechas */
+    }
+
+    header p {
+        font-size: 0.8em;
+    }
+
+    nav > div {
+        padding: 8px; /* Reduce el espaciado para pantallas muy pequeñas */
+    }
+
+    a {
+        font-size: 1em;
+    }
+}

@@ -1,127 +1,166 @@
-/* Estilo body generales */
-body{
-    display: flex;
-    flex-direction: column;
-    background-color:white;
-    color: black;
-    font: 10px sans-serif;
-    width: 100%;
-    margin: 0px;
-}
-
-html {
-    margin: 0px;
-}
-
-/* Estilos objetos del HEADER */
-header {
-    display: flex;
-    align-items: center;
-    background-color:#1e1d1d;
-    color: whitesmoke;
-    font-size: 4em;
-}
-
-header > h2, header > p {
-    padding-right: 0.5em;
-    margin: 10px 10px 10px 10px;
-}
-
-nav {
-    display: flex;
-    background-color:#00659d;
-    font-size: 1.5em;
-}
-
-/* Estilos objetos de la barra de NAVEGACIÓN */
-nav > div {
-    padding: 1em;
-}
-
-a {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: whitesmoke;
-    font-weight: bold;
-}
-
-nav > div:hover {
-    background-color: #003152;
-}
-
-
 /* Estilos objetos de main en CONTACTO */
 
-#contacto_content{
-    display: flex;
-    flex-wrap: wrap;
+main {
+    display: flex; 
     flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
-/* FORMULARIO */
-#div_form {
-    background-color: #95b9cc;
+#container_dir_map {
+    display: flex;
+    justify-content: left;
     width: 100%;
-    padding: 10px;
-    border-style: hidden;
+    margin: 20px;
+    gap: 20px;
 }
 
-input, textarea {
-    font-family: sans-serif;
-    border: 0px;
-    border-radius: 3px;
-    padding: 5px;
-    color: gray;
-    width: 98%;
-    margin: 5px;
-}
-
-#div_form > legend {
-    font-weight: bold;
-}
-
-/* DIRECCION */
+/* Estilo general para la sección de dirección */
 #div_direc {
     background-color: whitesmoke;
-    width: 70%;
-    height: 450px;
-    padding: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
 }
 
-#div_direc > img {
-    width: 100%;
+#div_direc h3 {
+    color: #1E76BA;
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+#div_direc address {
+    font-style: normal;
+    color: #333333; /* Gris oscuro */
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+#div_direc img {
+    max-width: 100%;
     max-height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* MAPA */
+/* Estilo general para el mapa */
 #div_map {
-    background-color: whitesmoke;
-    width: 25%;
-    height: 450px;
-    padding: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 60%;
 }
 
-#div_map > iframe {
+#div_map iframe {
     width: 100%;
     height: 100%;
+    border: none;
+    border-radius: 10px;
 }
 
-/* Estilos objetos del FOOTER */
-footer {
+
+/* FORMULARIO */
+#container_form {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background-color:#525252;
-    color: whitesmoke;
-    padding: 10px;
-    font-size: 1.2em;
-    position: relative;
-    bottom: 0;
+    justify-content: center;
+    align-content: stretch;
+    margin: 20px;
+    margin-top: 0px;
+    width: 100%;
 }
 
-div.rrss_iconos > img {
-    filter: invert(100%);
+#div_form {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #333333;
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+#div_form h3 {
+    text-align: l;
+    color: #1E76BA;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+/* Etiquetas */
+label {
+    display: flex;
+    align-items: center; 
+    padding: 10px 0px 10px 0px;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #333333;
+}
+
+/* Estilo de los inputs y textarea */
+input, textarea, button {
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    padding: 10px;
+    width: calc(100% - 22px);
+    box-sizing: border-box;
+    display: block;
+}
+
+input:focus, textarea:focus {
+    border: 1px solid #2176FF;
+    outline: none;
+    box-shadow: 0 0 5px #2176FF;
+}
+
+textarea {
+    height: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Estilo para botones */
+button {
+    background-color: #2176FF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 12px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #28A745;
+}
+
+/* Fieldsets */
+legend {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #333333; /* Gris oscuro */
+}
+
+fieldset {
+    display: flex;
+    border: none;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+fieldset > label {
+    margin-left: 20px;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    width: 15px;
+    margin-right: 20px;
 }

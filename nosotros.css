@@ -1,110 +1,110 @@
-/* Estilo body generales */
-body{
-    display: flex;
-    flex-direction: column;
-    background-color:white;
-    color: black;
-    font: 10px sans-serif;
-    width: 100%;
-    margin: 0px;
-}
-
-html {
-    margin: 0px;
-}
-
-/* Estilos objetos del HEADER */
-header {
-    display: flex;
-    align-items: center;
-    background-color:#1e1d1d;
-    color: whitesmoke;
-    font-size: 4em;
-}
-
-header > h2, header > p {
-    padding-right: 0.5em;
-    margin: 10px 10px 10px 10px;
-}
-
-nav {
-    display: flex;
-    background-color:#00659d;
-    font-size: 1.5em;
-}
-
-/* Estilos objetos de la barra de NAVEGACIÓN */
-nav > div {
-    padding: 1em;
-}
-
-a {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: whitesmoke;
-    font-weight: bold;
-}
-
-nav > div:hover {
-    background-color: #003152;
-}
-
 /* Estilos objetos de main en sobre NOSOTROS */
-h3 {
-    font-size: 1em;
-    background-color: #c9d8e2;
-    padding: 10px 10px 10px 10px;
-    margin: 0px;
+
+#nosotros_content {
+    background-color: white; /* Fondo suave para contrastar */
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 0px;
 }
-#nosotros_content > p, h4 {
-    margin-left: 10px;
-}
-q {
-    display: block;
+
+/* Encabezados principales */
+#nosotros_content h2 {
+    color: #1E76BA;
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
     text-align: center;
-    color: #00659d;
-    font-weight: bold;
-    font-size: 36px;
-    font-style: italic;
-    padding: 20px;
+    text-transform: capitalize;
 }
 
-ol > div {
-    display: flex;
-    align-items: center;
-    border: solid 1px;
-}
-
-ol > div > li {
-    font-weight: bold;
-    border: solid 1px;
-}
-
-ol > div > img {
-    padding-right: 30px;
-    border: solid 1px;
-}
-
-ol > dl {
-    margin-left: 65px;
-    border: solid 1px;
-}
-
-
-/* Estilos objetos del FOOTER */
-footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background-color:#525252;
-    color: whitesmoke;
+/* Estilo para citas */
+#nosotros_content q {
+    display: block;
+    margin: 20px 0;
     padding: 10px;
-    font-size: 1.2em;
-    position: relative;
-    bottom: 0;
+    background: linear-gradient(135deg, #95b9cc, #00659d);
+    color: #fff;
+    font-size: 1.3rem;
+    font-style: italic;
+    border-radius: 5px;
+    text-align: center;
 }
 
-div.rrss_iconos > img {
-    filter: invert(100%);
+/* Estilo de los párrafos */
+#nosotros_content p {
+    color: #333;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    padding: 0 15px;
+}
+
+/* Estilo de las listas no ordenadas */
+#nosotros_content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#nosotros_content li {
+    font-size: 1rem;
+    color: #555;
+    margin: 15px 0;
+    background-color: #f4f4f4;
+    border-left: 5px solid #00659d;
+    padding: 10px 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo de las listas ordenadas con iconos */
+#nosotros_content ol {
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+
+#nosotros_content ol div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#nosotros_content ol li {
+    font-size: 1.1rem;
+    color: #1E76BA;
+    margin-left: 10px;
+    font-weight: bold;
+    min-width: 300px;
+}
+
+#nosotros_content dl {
+    font-size: 1rem;
+    color: #666;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+/* Estilo para las imágenes dentro de las listas ordenadas */
+#nosotros_content ol img {
+    margin-right: 15px;
+}
+
+/* Estilo adaptado para pantallas pequeñas */
+@media (max-width: 768px) {
+    #nosotros_content {
+        padding: 20px 10px;
+    }
+
+    #nosotros_content h2 {
+        font-size: 1.8rem;
+    }
+
+    #nosotros_content q {
+        font-size: 1.2rem;
+    }
+
+    #nosotros_content li,
+    #nosotros_content dl {
+        font-size: 1rem;
+    }
 }

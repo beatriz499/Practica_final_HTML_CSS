@@ -1,89 +1,63 @@
-/* Estilo body generales */
-body{
+/* Estilos objetos de main en nuestros PRODUCTOS */
+main {
     display: flex;
     flex-direction: column;
-    background-color:white;
-    color: black;
-    font: 10px sans-serif;
-    width: 100%;
-    margin: 0px;
+    background-color: white; /* Fondo suave para contrastar */
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 0px;
 }
 
-html {
-    margin: 0px;
+/*Estilos en tabla*/
+#div_tabla {
+    text-align: left;
+    margin: 20px;
 }
 
-/* Estilos objetos del HEADER */
-header {
-    display: flex;
-    align-items: center;
-    background-color:#1e1d1d;
-    color: whitesmoke;
-    font-size: 4em;
-}
-
-header > h2, header > p {
-    padding-right: 0.5em;
-    margin: 10px 10px 10px 10px;
-}
-
-nav {
-    display: flex;
-    background-color:#00659d;
-    font-size: 1.5em;
-}
-
-/* Estilos objetos de la barra de NAVEGACIÓN */
-nav > div {
-    padding: 1em;
-}
-
-a {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: whitesmoke;
-    font-weight: bold;
-}
-
-nav > div:hover {
-    background-color: #003152;
-}
-
-/* Estilos objetos de main en nuestros PRODUCTOS */
-th, td {
-    border: solid 1px;
+table {
+    width: calc(100% - 40px);
     border-collapse: collapse;
+    margin: 20px auto;
+    font-size: 1.5em;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+caption {
+    color: #1E76BA;
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: left;
+    text-transform: capitalize;
+}
+
+thead {
+    background-color: #00659d;
+    color: white;
+}
+
+th, td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+    cursor: default;
+}
+
+tfoot td {
+    font-size: 14px;
     text-align: center;
-    padding: 10px;
-}
-
-/* MAPA */
-#div_map {
-    background-color: whitesmoke;
-    width: 25%;
-    height: 450px;
-    padding: 10px;
-}
-
-#div_map > iframe {
-    width: 100%;
-    height: 100%;
-}
-
-/* Estilos objetos del FOOTER */
-footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background-color:#525252;
-    color: whitesmoke;
-    padding: 10px;
-    font-size: 1.2em;
-    position: relative;
-    bottom: 0;
-}
-
-div.rrss_iconos > img {
-    filter: invert(100%);
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 15px;
+    border-top: 2px solid #00659d;
 }

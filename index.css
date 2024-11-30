@@ -24,6 +24,7 @@ header {
 
 header > h2, header > p {
     padding-right: 0.5em;
+    margin: 10px 10px 10px 10px;
 }
 
 nav {
@@ -49,20 +50,22 @@ nav > div:hover {
 }
 
 /* Estilos objetos de main en INICIO */
+
+#inicio_content > div {
+    display: flex;
+}
 #inicio_content > img {
     width: 100%;
 }
 
 #inicio_content > p {
-    position: absolute;
+    /* position: absolute; */
     top: 32%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     text-align: center;
     text-shadow: -3px 3px 5px black;
-    padding-top: 2em;
-    padding-bottom: 2em;
     font-size: 3em;
 }
 

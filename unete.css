@@ -24,6 +24,7 @@ header {
 
 header > h2, header > p {
     padding-right: 0.5em;
+    margin: 10px 10px 10px 10px;
 }
 
 nav {

@@ -6,7 +6,7 @@
         <title>Dunder Miffling</title>
         <link rel="icon" type="image/x-icon" href="recursos/icon-orig.png">
         <link href="header-nav-footer.css" rel="stylesheet">
-        <link href="game.css" rel="stylesheet">
+        <link href="aunmas.css" rel="stylesheet">
     </head>
 
     <body>
@@ -23,13 +23,68 @@
             <div><a href="nosotros.html">Sobre nosotros</a></div>
             <div><a href="productos.html">Nuestros productos</a></div>
             <div><a href="contacto.html">Contacto</a></div>
-            <div><a href="curiosidades.html">Curiosidades</a></div>
+            <div><a href="aunmas.html">Aún mas</a></div>
         </nav>
         
         <!-- Contenido -->
-         <main>
-            <img src="recursos/Threat_Level_Midnight.jpg">
-            <a href="https://www.youtube.com/watch?v=7iPyz6Yqwl4">Link a la película Threat Level Midnight</a>
+         <main id="aunmas_content">
+            <div class="tabla-container">
+                <h2>Aún Más: ¡Threat Level Midnight en Cines!</h2>
+                <p>Prepárate para la épica aventura de acción y comedia de Michael Scott. Su obra maestra, <b>Threat Level Midnight</b>, llega a la gran pantalla. ¡No te la pierdas!</p>
+            </div>
+            
+            <!-- Carteles -->
+             <div class="carrusel-poster">
+                <img src="recursos/estrangulador.jpg" alt="Cartel de El Estrangulador de Scranton">
+                <img class="poster-container" src="recursos/Threat_Level_Midnight.jpg" alt="Cartel de Threat Level Midnight">
+                <img src="recursos/prison-mike.jpg" alt="Cartel de Prison Mike">
+             </div>
+        
+            <!-- Tabla de horarios y cines -->
+             <div class="tabla-container">
+                <h3>Horarios y Cines Disponibles</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Cine</th>
+                            <th>Horario</th>
+                            <th>Ubicación</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Cinemark Scranton</td>
+                            <td>10:00 AM, 1:00 PM, 6:30 PM</td>
+                            <td>1725 Slough Ave, Scranton, PA</td>
+                        </tr>
+                        <tr>
+                            <td>Regal Scranton Center</td>
+                            <td>12:00 PM, 4:00 PM, 8:30 PM</td>
+                            <td>500 Office Dr, Scranton, PA</td>
+                        </tr>
+                        <tr>
+                            <td>Papermill Theaters</td>
+                            <td>2:00 PM, 5:00 PM, 9:00 PM</td>
+                            <td>45 Paper Rd, Utica, NY</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Enlace al audio -->
+            <div class="audio-section">
+                <h3>Banda sonora</h3>
+                <p>Escucha el tema principal de la película mientras decides tu horario:</p>
+                <audio controls>
+                    <source src="recursos/Midnight Hero.mp3" type="audio/mpeg">
+                    Tu navegador no soporta el elemento de audio.
+                </audio>
+            </div>
+        
+            <!-- Botón de compra de tickets -->
+            <div class="ticket-section">
+                <a href="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ2M1MXZzNXFjbnd5a2FjODN4ZWJvNjkycmcyZnVxdGF6eTdpbzNqaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/cXblnKXr2BQOaYnTni/giphy.webp" target="_blank" class="buy-tickets">Comprar Tickets</a>
+            </div>
          </main>
         
         <!-- Pie de la web -->

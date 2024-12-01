@@ -1,5 +1,16 @@
 /* Estilos objetos de main en INICIO */
 
+main{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    max-width: 1400px;
+    margin: 0 auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 0px;
+    height: 100vh;
+}
+
 /* Contenedor de la imagen */
 .image-container {
     position: relative; /* Contenedor relativo para posicionar elementos dentro */

@@ -1,9 +1,13 @@
 /* Estilos objetos de main en sobre NOSOTROS */
+@font-face {
+    font-family: "Charm";
+    src: url('recursos/Charm-Bold.ttf');
+}
 
 #nosotros_content {
     background-color: white; /* Fondo suave para contrastar */
     padding: 40px 20px;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     border-radius: 0px;
@@ -26,7 +30,8 @@
     padding: 10px;
     background: linear-gradient(135deg, #95b9cc, #00659d);
     color: #fff;
-    font-size: 1.3rem;
+    font-size: 2rem;
+    font-family: Charm;
     font-style: italic;
     border-radius: 5px;
     text-align: center;

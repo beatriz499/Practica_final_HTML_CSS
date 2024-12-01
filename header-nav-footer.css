@@ -2,7 +2,11 @@
 body{
     display: flex;
     flex-direction: column;
-    background-color: #e7eef3;
+    background: conic-gradient(
+        #e7eef3,
+        #1E76BA,
+        #e7eef3
+        );
     color: black;
     font-size: 10px;
     font-family: Arial, Helvetica, sans-serif;
@@ -50,7 +54,7 @@ nav {
 }
 
 nav > div {
-    padding: 10px 15px; /* Espaciado interno de cada enlace */
+    padding: 10px 15px;
 }
 
 nav > div:hover {
@@ -87,29 +91,29 @@ div.rrss_iconos > svg {
 /* Media Queries para adaptabilidad */
 @media (max-width: 768px) {
     header {
-        flex-direction: column; /* Coloca los elementos en una sola columna */
+        flex-direction: column;
         text-align: center;
     }
 
     header img {
-        max-width: 60px; /* Reduce el tamaño de la imagen en pantallas pequeñas */
+        max-width: 60px;
     }
 
     header h1 {
-        font-size: 1.5em; /* Reduce el tamaño del título */
+        font-size: 1.5em;
     }
 
     header p {
-        font-size: 0.9em; /* Reduce el tamaño del subtítulo */
+        font-size: 0.9em;
     }
 
     nav {
-        flex-direction: column; /* Coloca los enlaces uno debajo del otro */
+        flex-direction: column;
         align-items: center;
     }
 
     nav > div {
-        width: 100%; /* Los enlaces ocuparán el ancho completo */
+        width: 100%;
         text-align: center;
     }
 
@@ -120,7 +124,7 @@ div.rrss_iconos > svg {
 
 @media (max-width: 480px) {
     header h1 {
-        font-size: 1.2em; /* Aún más pequeño en pantallas muy estrechas */
+        font-size: 1.2em;
     }
 
     header p {
@@ -128,7 +132,7 @@ div.rrss_iconos > svg {
     }
 
     nav > div {
-        padding: 8px; /* Reduce el espaciado para pantallas muy pequeñas */
+        padding: 8px;
     }
 
     a {

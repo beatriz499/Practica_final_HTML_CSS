@@ -88,7 +88,7 @@ div.rrss_iconos > svg {
     padding: 5px;
 }
 
-/* Media Queries para adaptabilidad */
+/* Estilo adaptado para pantallas pequeñas */
 @media (max-width: 768px) {
     header {
         flex-direction: column;

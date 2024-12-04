@@ -1,4 +1,4 @@
-/* Estilos objetos de main en UNETE */
+/* Estilos objetos de main en AUN MAS */
 
 main {
     display: flex;
@@ -36,7 +36,7 @@ main {
     width: 300px;
 }
 
-@keyframes posterAnimation {
+@keyframes posterZoom {
     0% {
         transform: scale(1);
     }
@@ -53,7 +53,7 @@ main {
     width: 70%;
     max-width: 400px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-    animation: posterAnimation 5s ease-in-out infinite;
+    animation: posterZoom 5s ease-in-out infinite;
 }
 
 /* Tabla de horarios */
